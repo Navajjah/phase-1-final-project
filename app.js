@@ -5,12 +5,6 @@ document.querySelector('#search-icon').onclick = (event) => {
   search.classList.toggle('active');
 }
 
-//let navBar = document.getElementsByTagName('nav')
-
-//document.querySelector('#nav-icon').onclick = () => {
-  //navBar.classList.toggle('active');
-//}
-
 
 let header = document.querySelector('header');
 
@@ -78,33 +72,33 @@ fetch('http://localhost:3000/sshnackss')
             });
         });
         function filterSnacks(searchTerm) {
-          snackContainer.innerHTML = '';
+            snackContainer.innerHTML = '';
 
-          const filteredSnacks = snacks.filter(snack =>
-              snack.name.toLowerCase().includes(searchTerm.toLowerCase())
-          );
+            const filteredSnacks = snacks.filter(snack =>
+                snack.name.toLowerCase().includes(searchTerm.toLowerCase())
+            );
 
-          filteredSnacks.forEach(snack => {
-              const snackImage = snack.image ? snack.image : 'placeholder-image-url.jpg';
-              
-              snackContainer.innerHTML += `
-                  <div class="snack-item">
-                    <img src="${snackImage}" alt="${snack.name}">
-                    <h3>${snack.name}</h3>
-                    <p>${snack.description}</p>
-                    <span>$${snack.price.toFixed(2)}</span>
-                    <button class="add-to-basket-btn" data-id="${snack.id}">Add to Basket</button>
-                  </div>`;
-          });
-      }
+            filteredSnacks.forEach(snack => {
+                const snackImage = snack.image ? snack.image : 'placeholder-image-url.jpg';
+                
+                snackContainer.innerHTML += `
+                    <div class="snack-item">
+                      <img src="${snackImage}" alt="${snack.name}">
+                      <h3>${snack.name}</h3>
+                      <p>${snack.description}</p>
+                      <span>$${snack.price.toFixed(2)}</span>
+                      <button class="add-to-basket-btn" data-id="${snack.id}">Add to Basket</button>
+                    </div>`;
+            });
+        }
 
-      // Add event listener for the search bar
-      const searchInput = document.querySelector('.search-bar input[type="search"]');
+        // Add event listener for the search bar
+        const searchInput = document.querySelector('.search-bar input[type="search"]');
 
-      searchInput.addEventListener('input', () => {
-          const searchTerm = searchInput.value.trim();
-          filterSnacks(searchTerm);
-      });
+        searchInput.addEventListener('input', () => {
+            const searchTerm = searchInput.value.trim();
+            filterSnacks(searchTerm);
+        });
     })
     .catch(error => console.error('Error fetching the snacks:', error));
 
@@ -134,7 +128,7 @@ window.addEventListener('click', (event) => {
 let basket = [];
 
 function addToBasket(snackId) {
-  console.log("Adding snack to basket with ID:", snackId)
+  console.log("Snack ID:", snackId)
     const snack = snacks.find(item => item.id === parseInt(snackId));
     
     
@@ -154,11 +148,13 @@ function addToBasket(snackId) {
     }
 
     localStorage.setItem('basket', JSON.stringify(basket));
+    console.log(localStorage.getItem('basket'));
     
     displayBasket();
 }
 
 function displayBasket() {
+  console.log("Current Basket:", basket)
     const basketContainer = document.querySelector('.basket-items');
     const basketTotal = document.querySelector('.basket-total');
     
@@ -179,6 +175,6 @@ document.addEventListener('DOMContentLoaded', () => {
     const storedBasket = localStorage.getItem('basket');
     if (storedBasket) {
         basket = JSON.parse(storedBasket);
-        displayBasket(); 
+        return displayBasket(); 
     }
 });

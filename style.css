@@ -128,7 +128,8 @@ nav a:hover {
     padding: 10px 40px;
     border-radius: 0.3rem;
     background-position: 10;
-    /*color: ;*/
+    color: #879296;
+    text-decoration: dotted;
     font-weight: 500;
 }
 .btn:hover {
