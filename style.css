@@ -130,6 +130,63 @@ nav a:hover {
     font-size: 0.938rem;
     margin: 0.5rem 0 1.1rem;
 }
+
+/*Sshnacks section*/
+.sshnackss-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+.snack-item {
+    background-color: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.snack-item:hover {
+    transform: scale(1.05);
+}
+
+.snack-item img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-bottom: 2px solid #f5f5f5;
+}
+
+.snack-item h3 {
+    font-size: 1.2rem;
+    margin: 10px 0;
+    color: #333;
+}
+
+.snack-item p {
+    font-size: 0.9rem;
+    color: #666;
+    padding: 0 10px;
+    margin-bottom: 10px;
+}
+
+.snack-item span {
+    font-size: 1rem;
+    font-weight: bold;
+    color: #27ae60;
+    margin-bottom: 10px;
+    display: block;
+}
+.snack-item:hover {
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+    transform: translateY(-5px);
+    transition: 0.3s ease;
+}
+
+
+/*Footer/contact Section*/
 .footer {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(240px, auto));
