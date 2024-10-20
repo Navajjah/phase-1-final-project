@@ -13,7 +13,7 @@
 
 
 body {
-    background-color: #e2e2e2;
+    background-color: #fae2aa;
     /*background-image: url(https://i.pinimg.com/enabled_lo/564x/86/fd/71/86fd711269b65229adc48ec269fc903e.jpg);*/
 }
 
@@ -46,18 +46,26 @@ nav a {
    font-weight: 500; 
 }
 nav a:hover {
-    background: yellow;
+    background: #d97b73;
+    color: white;
     border-radius: 0.2rem;
     transition: 0.2s linear;
 }
 
 .navbar-icons {
-    color: black;
-    font-size: 22px;
+    font-size: 18px;
     cursor: pointer;
     z-index: 10000;
     display: flex;
     column-gap: 0.8rem; 
+}
+.navbar-icons i {
+    color: black;
+}
+.navbar-icons i:hover {
+    color: white;
+    border-radius: 0.2rem;
+    transition: 0.2s linear;
 }
 .search-bar {
     position: absolute;
@@ -191,7 +199,7 @@ nav a:hover {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(240px, auto));
     gap: 1.5rem;
-    background-color: yellow;
+    background-color: #db746b;
 }
 .footer-box h2 {
     font-size: 1.2rem;
@@ -215,7 +223,7 @@ nav a:hover {
     border-radius: 0.2rem;
 }
 .social a .fa-brands:hover {
-   background-color: #e2e2e2;
+   background-color: #faa998;
    color: black;
 }
 .footer-box h3 {
@@ -226,7 +234,8 @@ nav a:hover {
     color: black;
 }
 .footer-box li a:hover {
-    color: black;
+    color: white;
+    text-decoration: underline;
 }
 .contact {
     display: flex;
@@ -240,10 +249,11 @@ nav a:hover {
 .contact i {
     font-size: 20px;
     margin-right: 1rem;
+    color: white;
 }
 .copyright{
     padding: 20px;
     text-align: center;
-    background-color: black;
-    color: yellow;
+    background-color: #85929a;
+    color: white;
 }

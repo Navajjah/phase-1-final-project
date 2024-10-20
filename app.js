@@ -1,3 +1,23 @@
+let search = document.querySelector('.search-bar');
+
+document.querySelector('#search-icon').onclick = () => {
+    search.classList.toggle('active');
+}
+
+//let navBar = document.getElementsByTagName('nav')
+
+//document.querySelector('#nav-icon').onclick = () => {
+  //navBar.classList.toggle('active');
+//}
+
+
+let header = document.querySelector('header');
+
+window.addEventListener('scroll' , () => {
+    header.classList.toggle('shadow', window.scrollY > 0);
+})
+
+
 const snackContainer = document.querySelector('.sshnackss-container');
 
 return fetch('http://localhost:3000/sshnackss') 
