@@ -64,6 +64,7 @@ fetch('http://localhost:3000/sshnackss')
                 });
             });
         }
+        
 
         
         displaySnacks('all');
@@ -76,6 +77,34 @@ fetch('http://localhost:3000/sshnackss')
                 displaySnacks(filter); 
             });
         });
+        function filterSnacks(searchTerm) {
+          snackContainer.innerHTML = '';
+
+          const filteredSnacks = snacks.filter(snack =>
+              snack.name.toLowerCase().includes(searchTerm.toLowerCase())
+          );
+
+          filteredSnacks.forEach(snack => {
+              const snackImage = snack.image ? snack.image : 'placeholder-image-url.jpg';
+              
+              snackContainer.innerHTML += `
+                  <div class="snack-item">
+                    <img src="${snackImage}" alt="${snack.name}">
+                    <h3>${snack.name}</h3>
+                    <p>${snack.description}</p>
+                    <span>$${snack.price.toFixed(2)}</span>
+                    <button class="add-to-basket-btn" data-id="${snack.id}">Add to Basket</button>
+                  </div>`;
+          });
+      }
+
+      // Add event listener for the search bar
+      const searchInput = document.querySelector('.search-bar input[type="search"]');
+
+      searchInput.addEventListener('input', () => {
+          const searchTerm = searchInput.value.trim();
+          filterSnacks(searchTerm);
+      });
     })
     .catch(error => console.error('Error fetching the snacks:', error));
 

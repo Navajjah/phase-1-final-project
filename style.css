@@ -133,9 +133,17 @@ nav a:hover {
 .btn:hover {
     background-color: black;
 }
+.about {
+    background-color:#addee3;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(17rem,auto));
+    align-items: center;
+    gap: 1.5rem;
+}
 
 .about-img img {
     border-radius: 0.5rem;
+    width: 400px;
 }
 .about-content h2 {
     font-size: 1.8rem;
