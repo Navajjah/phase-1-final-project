@@ -1,3 +1,4 @@
+//search event
 let search = document.querySelector('.search-bar');
 
 document.querySelector('#search-icon').onclick = (event) => {
@@ -5,7 +6,7 @@ document.querySelector('#search-icon').onclick = (event) => {
   search.classList.toggle('active');
 }
 
-
+//Scroll-event
 let header = document.querySelector('header');
 
 window.addEventListener('scroll' , () => {
