@@ -110,6 +110,7 @@ nav a:hover {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(17rem,auto));
     align-items: center;
+    padding: 80px;
     gap: 1.5rem;
 }
 .home-content h1 {
@@ -136,10 +137,11 @@ nav a:hover {
     color: white;
 }
 .about {
-    background-color:#addee3;
+    background-color: transparent;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(17rem,auto));
     align-items: center;
+    padding: 80px;
     gap: 2rem;
 }
 
@@ -158,6 +160,10 @@ nav a:hover {
 }
 
 /*Sshnacks section*/
+.heading h2 {
+    text-align: center;
+    text-transform: uppercase;
+}
 .filter-options {
     display: flex;
     justify-content: center;
@@ -186,7 +192,7 @@ nav a:hover {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     gap: 20px;
-    padding: 20px;
+    padding: 80px;
 }
 
 .snack-item {
