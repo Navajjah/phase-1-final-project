@@ -3,7 +3,7 @@
 * {
     font-family: 'Poppins', sans-serif;
     margin: 0;
-    box-sizing: 0;
+    box-sizing: border-box;
     scroll-behavior: smooth;
     scroll-padding-top: 4rem;
     list-style: none;
@@ -28,6 +28,10 @@ header {
     align-items: center;
     transition: 0.5s linear;
     background-color: transparent;
+}
+header.shadow {
+   background: black;
+   box-shadow: ; 
 }
 
 .logo img {
@@ -125,4 +129,64 @@ nav a:hover {
 .about-content p {
     font-size: 0.938rem;
     margin: 0.5rem 0 1.1rem;
+}
+.footer {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, auto));
+    gap: 1.5rem;
+    background-color: yellow;
+}
+.footer-box h2 {
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+.footer-box p {
+    font-size: 0.938rem;
+    margin-bottom: 10px;
+}
+.social {
+    display: flex;
+    align-items: center;
+    column-gap: 0.5rem;
+}
+.social a .fa-brands {
+    font-size: 24px;
+    color: black;
+    padding: 10px;
+    background: #e2e2e2;
+    border-radius: 0.2rem;
+}
+.social a .fa-brands:hover {
+   background-color: #e2e2e2;
+   color: black;
+}
+.footer-box h3 {
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+.footer-box li a {
+    color: black;
+}
+.footer-box li a:hover {
+    color: black;
+}
+.contact {
+    display: flex;
+    flex-direction: column;
+    row-gap: 0.5rem;
+}
+.contact span {
+    display: flex;
+    align-items: center;
+}
+.contact i {
+    font-size: 20px;
+    margin-right: 1rem;
+}
+.copyright{
+    padding: 20px;
+    text-align: center;
+    background-color: black;
+    color: yellow;
 }
