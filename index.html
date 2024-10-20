@@ -6,6 +6,7 @@
     <title>Snack Haven</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
     <link rel="stylesheet" href="./style.css"/>
+    
 </head>
 <body>
     <header>
@@ -24,15 +25,19 @@
             <a href="#contact">Contact</a>
         </nav>
         <div class="navbar-icons">
-            <a href=""><i class="fa-solid fa-basket-shopping"></i></a>
-            <a href=""><i class="fa-solid fa-magnifying-glass" id="search-icon"></i></a>
+            <a href="javascript:void(0)" id="basket-icon"><i class="fa-solid fa-basket-shopping"></i></a>
+            <button id="search-icon"><i class="fa-solid fa-magnifying-glass"></i></a></button>
         </div>
         <div class="search-bar">
             <input type="search" name="" id="" placeholder="Search Here">
         </div>
     </header>
 
-<!--The Home section-->
+
+
+
+
+    <!--The Home section-->
     <section class="home">
         <div class="home-content">
             <h1>Welcome,<br>to Snack Haven</h1>
@@ -47,27 +52,58 @@
         </div>
     </section>
 
-<!--The About section-->
+
+
+
+    <!--The About section-->
     <section class="about" id="about">
         <div class="about-img">
             <img/>
         </div>
         <div class="about-content">
             <h2>Our History</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            <p>Snack Haven began with a simple mission: to make snacking fun and exciting for everyone. What started as a small family shop in 2010 has now grown into a haven for snack lovers everywhere. Back then, we were just a group of foodies with a passion for discovering new flavors and sharing them with our community. Our shop quickly became the go-to spot for snack enthusiasts who wanted more than just the usual chips and candy.
+
+                As word spread, so did our selection! We expanded to include international treats, healthier options, and quirky new snacks that you couldn’t find anywhere else. Fast forward to today, and Snack Haven is an online destination where anyone can explore the world through snacks—all from the comfort of their home.
+                
+                From our humble beginnings to our ever-growing collection, one thing has never changed: our love for snacks and the joy they bring to people’s lives.</p>
+                <h2>What SnackHaven means to us</h2>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
             <a href="#" class="btn">Learn More</a>
         </div>
 
     </section>
-<!--The Sshnackss List-->
+
+
+
+
+<!--The Sshnackss Section-->
     <section class="sshnackss" id="sshnackss">
         <div class="heading">
             <h2>Our Popular Products</h2>
         </div>
-        <div class="sshnackss-container"></div>
+        <div class="filter-options">
+            <button class="filter-btn" data-filter="all">All</button>
+            <button class="filter-btn" data-filter="healthy">Healthy</button>
+            <button class="filter-btn" data-filter="spicy">Spicy</button>
+            <button class="filter-btn" data-filter="sugary">Sugary</button>
+            <button class="filter-btn" data-filter="salty">Salty</button>
+        </div>
+        
+        <div class="sshnackss-container">
+            <!-- Snack items will be injected here -->
+        </div>
     </section>
+<!--The Basket Modal (initially hidden)-->
+    <div id="basket-modal" class="basket-modal">
+        <div class="basket-modal-content">
+            <span class="close-basket-modal">&times;</span>
+            <h3>Your Basket</h3>
+            <ul class="basket-items"></ul>
+            <div class="basket-total"></div>
+        </div>
+    </div>
 
 <!--The footer section-->
     <section class="footer">
@@ -115,7 +151,7 @@
     </div>
 
         
-
+<script src="app.js"></script>
 
 
 </body>

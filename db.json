@@ -5,98 +5,112 @@
         "name": "Mini Cheesy Bites",
         "image":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTksBFuc6KWatBCL3kfCbiPoyJ-uklLHOx6q86Wyi_DAyNiP5EPyR7uG_cvzqKnGOYGiu8&usqp=CAU",
         "price": 3.99,
-        "description": "Crunchy cheese-filled snack with a hint of spice."
+        "description": "Crunchy cheese-filled snack with a hint of spice.",
+        "category": "salty"
       },
       {
         "id": 2,
         "name": "Chocolate Drizzle Popcorn",
         "image": "https://d25p7kn1prnwkz.cloudfront.net/ghcretors/2021/chocolatey-drizzle.png",
         "price": 4.50,
-        "description": "Sweet and salty popcorn coated with rich chocolate."
+        "description": "Sweet and salty popcorn coated with rich chocolate.",
+        "category": "sugary"
       },
       {
         "id": 3,
         "name": "Spicy Nachos",
         "image": "https://www.luckystore.in/cdn/shop/files/DoritosspicyNachochips311.8g.png?v=1724486856",
         "price": 5.25,
-        "description": "Crispy nachos topped with jalapeños and melted cheese."
+        "description": "Crispy nachos topped with jalapeños and melted cheese.",
+        "category": "spicy"
       },
       {
         "id": 4,
         "name": "Mini Pretzels",
         "image": "https://www.simpalosnacks.com/cdn/shop/products/SnydersOfHanover_MiniPretzels_1024x1024.jpg?v=1571439580",
         "price": 2.99,
-        "description": "Salted mini pretzels, perfect for a quick snack."
+        "description": "Salted mini pretzels, perfect for a quick snack.",
+        "category": "salty"
       },
       {
         "id": 5,
         "name": "Fruit Medley",
         "image": "https://cdn-prd-02.pnp.co.za/sys-master/images/h9b/h7f/10971318255646/silo-product-image-v2-05Oct2022-180147-6005118001820-Straight_on-60595-1993_400Wx400H",
         "price": 4.75,
-        "description": "A refreshing mix of seasonal fruits for a healthy option."
+        "description": "A refreshing mix of seasonal fruits for a healthy option.",
+        "category": "healthy"
       },
       {
         "id": 6,
         "name": "Salted Caramel Nut Bars",
         "image": "https://assets.woolworths.com.au/images/1005/37489.jpg?impolicy=wowsmkqiema&w=600&h=600",
         "price": 3.50,
-        "description": "Crunchy nuts coated in caramel and drizzled with chocolate."
+        "description": "Crunchy nuts coated in caramel and drizzled with chocolate.",
+        "category":"salty"
       },
       {
         "id": 7,
         "name": "Sweet Potato Chips",
         "image": "https://www.healthysnacksolutions.com/cdn/shop/products/Screen_Shot_2020-02-17_at_11.20.11_AM_800x.png?v=1581956471",
         "price": 3.25,
-        "description": "Crispy sweet potato chips with a touch of sea salt."
+        "description": "Crispy sweet potato chips with a touch of sea salt.",
+        "category":"salty"
       },
       {
         "id": 8,
         "name": "Mixed Berry Yogurt",
         "image": "https://greenspoon.co.ke/wp-content/uploads/2024/06/greenspoon-brookside-mixed-berries-1-of-1.jpg",
         "price": 5.99,
-        "description": "Layers of creamy yogurt, fresh berries, and granola."
+        "description": "Layers of creamy yogurt, fresh berries, and granola.",
+        "category":"healthy"
       },
       {
         "id": 9,
         "name": "Veggie Sticks",
         "image": "https://m.media-amazon.com/images/I/816OPVpkZGL._AC_UF894,1000_QL80_.jpg",
         "price": 3.75,
-        "description": "Crispy sticks made from a blend of vegetables, lightly salted."
+        "description": "Crispy sticks made from a blend of vegetables, lightly salted.",
+        "category": "healthy"
       },
       {
         "id": 10,
         "name": "Hummus Chips",
         "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQFJEDb9WtItgeW0ijZLxabX5iVKWl2xtCiz-zBnpciODutlc89xnNHnaEmbCMbykQa1VE&usqp=CAU",
         "price": 4.99,
-        "description": "Creamy hummus served with crunchy whole-grain pita chips."
+        "description": "Creamy hummus served with a hummus dip.",
+        "category":"healthy"
       },
       {
         "id": 11,
         "name": "Kale Chips",
         "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRGpcMOw84PGKIPqINOs8_c8hMFM9zIIeErRfqkn2CCJ_du-XmkRy7Dp6-5MbcgubMWfvc&usqp=CAU",
         "price": 4.25,
-        "description": "Baked kale chips seasoned with sea salt for a healthy crunch."
+        "description": "Baked kale chips seasoned with sea salt for a healthy crunch.",
+        "category": "healthy"
       },
       {
         "id": 12,
         "name": "Greek Yogurt with Honey",
         "image": "https://www.artcaffemarket.co.ke/wp-content/uploads/2021/09/Untitled-design-2021-09-17T014135.416.png",
         "price": 3.99,
-        "description": "Creamy Greek yogurt drizzled with organic honey."
+        "description": "Creamy Greek yogurt drizzled with organic honey.",
+        "category": "healthy"
       },
       {
         "id": 13,
         "name": "Avocado Toast Bites",
         "image": "https://sabra.com/cdn/shop/files/CA_20240503_Guac_76g_AvocadoToast.jpg?v=1717428097&width=700",
         "price": 5.50,
-        "description": "Crispy toast topped with fresh avocado and a sprinkle of sea salt."
+        "description": "Crispy toast topped with fresh avocado and a sprinkle of sea salt.",
+        "category":"salty"
       },
       {
         "id": 14,
         "name": "Trail Mix",
         "image": "https://m.media-amazon.com/images/I/61d94TceAiS.jpg",
         "price": 4.00,
-        "description": "A mix of nuts, seeds, dried fruits, and dark chocolate chips."
+        "description": "A mix of nuts, seeds, dried fruits, and dark chocolate chips.",
+        "category":"healthy"
       }
     ]
   }
