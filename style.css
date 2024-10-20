@@ -57,11 +57,16 @@ nav a:hover {
 }
 .search-bar {
     position: absolute;
-    top: 100%;
+    top: -100%;
     left: 50%;
     transform: translate(-50%);
     background-color: #e2e2e2;
     width: 100%;
+}
+.search-bar.active {
+   top: 110%;
+   /*box-shadow: ;*/
+   transition: 0.2s all linear;
 }
 .search-bar input {
     padding: 20px;
@@ -74,4 +79,50 @@ nav a:hover {
 .search-bar input::placeholder {
     font-size: 1rem;
     font-weight: 500;
+}
+
+.home {
+    width: 100%;
+    min-height: 100vh;
+    background: url();
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(17rem,auto));
+    align-items: center;
+    gap: 1.5rem;
+}
+.home-content h1 {
+    font-size: 3.4rem;
+    color: black;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+.home-content p {
+    font-size: 0.938rem;
+    color: black;
+    margin: 0.5rem 1.4rem;
+}
+.btn {
+    padding: 10px 40px;
+    border-radius: 0.3rem;
+    /*background-position:*/
+    /*color: ;*/
+    font-weight: 500;
+}
+.btn:hover {
+    background-color: black;
+}
+
+.about-img img {
+    border-radius: 0.5rem;
+}
+.about-content h2 {
+    font-size: 1.8rem;
+    text-transform: uppercase;
+}
+.about-content p {
+    font-size: 0.938rem;
+    margin: 0.5rem 0 1.1rem;
 }

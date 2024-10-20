@@ -1,0 +1,53 @@
+{
+    "sshnackss": [
+      {
+        "id": 1,
+        "name": "Cheesy Bites",
+        "price": 3.99,
+        "description": "Crunchy cheese-filled snack with a hint of spice."
+      },
+      {
+        "id": 2,
+        "name": "Chocolate Drizzle Popcorn",
+        "price": 4.50,
+        "description": "Sweet and salty popcorn coated with rich chocolate."
+      },
+      {
+        "id": 3,
+        "name": "Spicy Nachos",
+        "price": 5.25,
+        "description": "Crispy nachos topped with jalapeños and melted cheese."
+      },
+      {
+        "id": 4,
+        "name": "Mini Pretzels",
+        "price": 2.99,
+        "description": "Salted mini pretzels, perfect for a quick snack."
+      },
+      {
+        "id": 5,
+        "name": "Fruit Medley",
+        "price": 4.75,
+        "description": "A refreshing mix of seasonal fruits for a healthy option."
+      },
+      {
+        "id": 6,
+        "name": "Caramel Nut Bars",
+        "price": 3.50,
+        "description": "Crunchy nuts coated in caramel and drizzled with chocolate."
+      },
+      {
+        "id": 7,
+        "name": "Sweet Potato Chips",
+        "price": 3.25,
+        "description": "Crispy sweet potato chips with a touch of sea salt."
+      },
+      {
+        "id": 8,
+        "name": "Mixed Berry Yogurt Parfait",
+        "price": 5.99,
+        "description": "Layers of creamy yogurt, fresh berries, and granola."
+      }
+    ]
+  }
+  
